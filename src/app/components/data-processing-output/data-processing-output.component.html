@@ -1,0 +1,14 @@
+<p>data-processing-output works!</p>
+<!-- <button type="button" (click)="buyCoin()">Buy</button>
+<button type="button" (click)="getPortfolio()">Portfolio</button> -->
+
+<div *ngIf="portfolio">
+    <h1>Portfolio</h1>
+    <ul *ngFor="let portfolioItem of portfolio.currencies;">
+        <li>Currency Id: {{portfolioItem.currencyId}}</li>
+        <li>Value: {{portfolioItem.value}}</li>
+        <li>Amount: {{portfolioItem.amount}}</li>
+    </ul>
+</div>
+
+<h2>{{total}}</h2>
